@@ -5,7 +5,7 @@
   "main": "./src/wolfram",
   "repository": {
     "type": "git",
-    "url": "https://github.com/notpeter/hubot-wolfram.git"
+    "url": "https://github.com/cycomachead/hubot-wolfram.git"
   },
   "keywords": [
     "hubot",
