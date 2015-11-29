@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/notpeter/hubot-wolfram",
   "dependencies": {
-    "wolfram": "^0.3.2"
+    "wolfram": "https://github.com/cycomachead/node-wolfram"
   }
 }
