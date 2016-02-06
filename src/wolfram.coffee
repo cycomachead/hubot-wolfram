@@ -8,7 +8,8 @@
 #   HUBOT_WOLFRAM_APPID - your AppID
 #
 # Commands:
-#   hubot question <question> - Searches Wolfram Alpha for the answer to the question
+#   hubot question <?> - Searches Wolfram Alpha for the question
+#   hubot question image <?> - Searches Wolfram Alpha for the question, and return an image if found.
 #
 # Notes:
 #   This may not work with node 0.6.x
@@ -20,7 +21,7 @@
 Wolfram = require('wolfram').createClient(process.env.HUBOT_WOLFRAM_APPID)
 
 module.exports = (robot) ->
-  robot.respond /(question|wfa)(\s*image|img\s*)?(?:\s*me\s*)? (.*)$/i, (msg) ->
+  robot.respond /(question|wfa)(\s*image|img\s*)?(?:\s*me\s*)? (.*)$/i, id: 'wolfram.query', (msg) ->
     Wolfram.query msg.match[3], (e, result) ->
       if result and result.length > 0
         primary = (item for item in result when item['primary'] == true)

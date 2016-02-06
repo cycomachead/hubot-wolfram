@@ -1,7 +1,7 @@
 {
   "name": "hubot-wolfram",
   "description": "Hubot script to query Wolfram Alpha.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./src/wolfram",
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/notpeter/hubot-wolfram",
   "dependencies": {
-    "wolfram": "https://github.com/cycomachead/node-wolfram"
+    "wolfram": "git://github.com/cycomachead/node-wolfram.git"
   }
 }
